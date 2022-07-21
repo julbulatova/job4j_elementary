@@ -116,7 +116,7 @@ public class ChessBoardTest {
     }
 
     @Test
-    public void whenY2isGreater7ThenWayIs0() {
+    public void whenY2IsGreater7ThenWayIs0() {
         int x1 = 2;
         int y1 = 6;
         int x2 = 4;

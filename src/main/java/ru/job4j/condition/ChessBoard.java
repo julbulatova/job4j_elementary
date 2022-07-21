@@ -5,8 +5,9 @@ public class ChessBoard {
         int rsl = 0;
         if (isValid(x1) && isValid(x2)
                 && isValid(y1) && isValid(y2)) {
-            rsl = Math.abs(x1 - x2);
-            rsl = rsl == 0 ? Math.abs(y1 - y2) : rsl;
+            if (Math.abs(x1 - x2) == Math.abs(y1 - y2)) {
+                rsl = Math.abs(x1 - x2);
+            }
         }
         return rsl;
     }
@@ -16,7 +17,7 @@ public class ChessBoard {
     }
 
     public static void main(String[] args) {
-        System.out.println(way(6, 7, 1, 2));
+        System.out.println(way(2, 6, 4, 1));
         System.out.println(way(2, 6, 4, 10));
     }
 }
